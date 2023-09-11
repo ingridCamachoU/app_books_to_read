@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .cover {
+    font-family: 'Birthstone Bounce', cursiva;
+  }
+}
+
+body{
+    background-color:#E7DBE9;
+}
+
+button:hover .btn_add_icon {
+  transform: translateX(5px) rotate(45deg);
+}
+  
+button:hover .btn_add_span {
+  transform: translateX(7px);
+}
+
+.input{
+  box-shadow: 0 0.4rem #fbd4e6;
+}
+
+.tilte{
+  text-align: left; 
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight:bold; 
+  font-size: 40px; 
+  color: #fffeff; 
+  text-shadow: 0 0 0.2em #8a2d87, 0 0 0.2em #310b30, 0 0 0.2em #361035;
+}
+
+.checkbox {
+  clip-path: circle(46% at 50% 50%);
+  width:25px;
+  height:25px;
+  cursor: pointer;
+}
+
+input:checked{
+  text-decoration: game;
+}
+
+.card{
+  box-shadow: 35px 35px 68px 0px rgba(235, 199, 241, 0.2), inset -8px -8px 16px 0px rgba(211, 181, 220, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);;
+}
+
+
+.book {
+  position: relative;
+  border-radius: 10px;
+  width: 220px;
+  height: 300px;
+  background-color: #fcf9fc;
+  -webkit-box-shadow: 1px 1px 12px #e10b6b;
+  box-shadow: 1px 1px 12px #8a0241;
+  -webkit-transform: preserve-3d;
+  -ms-transform: preserve-3d;
+  transform: preserve-3d;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #e3679f;
+  text-shadow: 0 0 0.2em #ffffff, 0 0 0.2em #ffffff, 0 0 0.2em #ffffff;
+  cursor: pointer;
+  
+}
+
+.cover {
+  top: 0;
+  position: absolute;
+  background-color: #f392be;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 0;
+  -ms-transform-origin: 0;
+  transform-origin: 0;
+  -webkit-box-shadow: 1px 1px 12px #ffffff;
+  box-shadow: 1px 1px 12px #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.book:hover .cover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotatey(-80deg);
+  -ms-transform: rotatey(-80deg);
+  transform: rotatey(-80deg);
+}
+
